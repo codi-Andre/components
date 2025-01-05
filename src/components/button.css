@@ -113,16 +113,16 @@
   pointer-events: none;
 }
 
-.focus {
+.button.focus {
   outline: solid 2px var(--neutral-50);
   outline-offset: 2px;
 }
 
-.hover {
+.button.hover {
   background-color: var(--neutral-600);
 }
 
-.active {
+.button.active {
   transform: translateY(2px);
   box-shadow: none;
 }
