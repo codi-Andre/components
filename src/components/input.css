@@ -1,0 +1,53 @@
+#inputs div {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+#inputs h3 {
+  grid-column: span 4;
+}
+
+.input {
+  display: flex;
+
+  background-color: var(--neutral-900);
+  color: var(--neutral-100);
+
+  border: solid 1px var(--neutral-500);
+  border-radius: 12px;
+  height: 40px;
+  padding: 8px 12px;
+  width: 100%;
+
+  font-size: 1rem;
+}
+
+.input:focus-visible {
+  outline: solid 2px var(--neutral-50);
+}
+
+.input::placeholder {
+  color: var(--neutral-500);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.input::file-selector-button {
+  background-color: transparent;
+  color: var(--neutral-100);
+
+  border: none;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.input.focus {
+  outline: solid 2px var(--neutral-50);
+}
